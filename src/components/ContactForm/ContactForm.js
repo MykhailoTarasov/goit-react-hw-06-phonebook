@@ -1,6 +1,4 @@
 import { Formik } from 'formik';
-
-
 import * as Yup from 'yup';
 import {
   Button,
@@ -12,6 +10,9 @@ import {
   StyledForm,
   UserIcon,
 } from './ContactForm.Styled';
+import { useDispatch, useSelector } from 'react-redux';
+import { addContact } from 'redux/contactsSlice';
+import { getContacts } from 'redux/selectors';
 
 const validation = Yup.object().shape({
   name: Yup.string()
@@ -30,18 +31,30 @@ const validation = Yup.object().shape({
     .min(9, 'Please enter at least 9 characters'),
 });
 
-const ContactForm = ({ onAdd }) => (
-  <Container>
+const ContactForm = () => {
+  const dispatch = useDispatch();
+  const contacts = useSelector(getContacts);
+  const handleSubmit = (values, actions) => {
+    const nameExists = contacts.some(
+      contact => contact.name.toLowerCase() === values.name.toLowerCase()
+    );
+    if (nameExists) {
+      alert(`${values.name} is already in contacts.`);
+    } else {
+      dispatch(addContact(values));
+      actions.resetForm();
+    }
+  };
+
+  return (
+    <Container>
     <Formik
       initialValues={{
         name: '',
         number: '',
       }}
       validationSchema={validation}
-      onSubmit={(values, actions) => {
-        onAdd(values);
-        actions.resetForm();
-      }}
+      onSubmit={handleSubmit}
     >
       <StyledForm>
         <Label>
@@ -60,6 +73,9 @@ const ContactForm = ({ onAdd }) => (
       </StyledForm>
     </Formik>
   </Container>
-);
+  )
+}
+ 
+
 
 export default ContactForm;
