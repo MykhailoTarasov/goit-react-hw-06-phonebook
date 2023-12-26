@@ -1,8 +1,9 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { ButtonItem, List, ListItem, Text } from './ContactList.Styled';
 import { FaTrashCan } from 'react-icons/fa6';
-import { getFilter } from 'redux/selectors';
-import { onDeleteContact } from 'redux/contactSlice';
+import { getFilter } from '../../redux/selectors';
+import { onDeleteContact } from '../../redux/contactSlice';
+
 
 const getContacts = (contacts, filterContact) => {
   if (filterContact === '') {

@@ -11,8 +11,9 @@ import {
   UserIcon,
 } from './ContactForm.Styled';
 import { useDispatch, useSelector } from 'react-redux';
-import { addContact } from 'redux/contactsSlice';
-import { getContacts } from 'redux/selectors';
+import { getContacts } from '../../redux/selectors';
+import { addContact } from '../../redux/contactSlice';
+
 
 const validation = Yup.object().shape({
   name: Yup.string()
@@ -75,7 +76,7 @@ const ContactForm = () => {
   </Container>
   )
 }
- 
+
 
 
 export default ContactForm;

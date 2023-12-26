@@ -41,3 +41,5 @@ export const persistedContactsReducer = persistReducer(
 );
 
 export const { addContact, onDeleteContact } = contactSlice.actions;
+
+
