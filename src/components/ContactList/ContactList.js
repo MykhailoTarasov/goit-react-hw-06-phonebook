@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { ButtonItem, List, ListItem, Text } from './ContactList.Styled';
-import { FaTrashCan } from 'react-icons/fa6';
+import { ButtonItem, DeleteIcon, List, ListItem, Text } from './ContactList.Styled';
+
 import { getContacts, getFilter } from '../../redux/selectors';
 import { onDeleteContact } from '../../redux/contactSlice';
 
@@ -28,7 +28,7 @@ const ContactList = () => {
             {name}: {number}
           </Text>
           <ButtonItem onClick={() => dispatch(onDeleteContact(id))}>
-            <FaTrashCan />
+            <DeleteIcon />
           </ButtonItem>
         </ListItem>
       ))}

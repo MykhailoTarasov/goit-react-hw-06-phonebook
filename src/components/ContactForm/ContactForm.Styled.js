@@ -29,6 +29,7 @@ export const StyledField = styled(Field)`
   width: 200px;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 4px;
   margin: 0;
   padding-left: 35px;
@@ -40,8 +41,11 @@ export const Button = styled.button`
   padding: 10px;
   color: white;
   background-color: #4d83c2;
-  border-radius: 5px;
   cursor: pointer;
+
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
 `;
 
 export const Label = styled.label`
@@ -50,14 +54,15 @@ export const Label = styled.label`
 
 export const UserIcon = styled(FaUser)`
   position: absolute;
-  top: 11px;
+  top: 13px;
   left: 10px;
   color: #4d83c2;
 `;
 
 export const PhoneIcon = styled(FaPhone)`
   position: absolute;
-  top: 11px;
+  top: 13px;
   left: 10px;
   color: #4d83c2;
 `;
+
