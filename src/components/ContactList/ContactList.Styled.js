@@ -40,4 +40,6 @@ export const ButtonItem = styled.button`
 
 export const Text = styled.p`
   margin: 0;
+  text-shadow: grey 2px 2px 5px;
+  font-weight: 500;
 `;
