@@ -17,7 +17,7 @@ export const ListItem = styled.li`
   max-width: 100%;
 
   background-color: #5dd7d2;
-  border: 1px solid gray;
+  border: 1px solid #0daea7;
   border-radius: 5px;
   box-shadow: gray 1px 1px 5px;
 

@@ -7,11 +7,12 @@ export const FilterContainer = styled.div`
   justify-content: center;
   gap: 5px;
   text-allign: center;
+  padding-bottom: 20px;
 `;
 
 export const FilterTitle = styled.h3`
   text-allign: center;
-  padding: 15px;
+  padding: 0 0 15px 0;
   margin: 0;
   text-shadow: grey 2px 2px 5px;
 `;

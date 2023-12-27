@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Title = styled.h2`
-  margin: 0;
+  margin: 20px 0 0 0;
   padding: 20px;
   text-shadow: grey 2px 2px 5px;
 `;
