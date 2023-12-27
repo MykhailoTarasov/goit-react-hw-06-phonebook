@@ -24,6 +24,11 @@ export const ListItem = styled.li`
   margin: 0;
   padding: 10px;
   list-style: none;
+
+  &:hover {
+    transform: scale(1.03);
+    cursor: zoom-in;
+  }
 `;
 
 export const ButtonItem = styled.button`
