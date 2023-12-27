@@ -3,7 +3,7 @@ import ContactList from './ContactList/ContactList';
 import Filter from './Filter/Filter';
 import { Container, Title } from './Layout';
 
-export const App = () => {
+const App = () => {
   return (
     <Container>
       <h1>Phonebook</h1>
