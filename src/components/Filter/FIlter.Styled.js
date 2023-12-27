@@ -13,6 +13,7 @@ export const FilterTitle = styled.h3`
   text-allign: center;
   padding: 15px;
   margin: 0;
+  text-shadow: grey 2px 2px 5px;
 `;
 
 export const FilterInput = styled.input`

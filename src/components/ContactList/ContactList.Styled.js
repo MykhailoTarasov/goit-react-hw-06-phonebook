@@ -6,6 +6,7 @@ export const List = styled.ul`
   list-style: none;
   display: flex;
   flex-direction: column;
+  gap: 15px;
 `;
 
 export const ListItem = styled.li`
@@ -15,8 +16,13 @@ export const ListItem = styled.li`
   gap: 15px;
   max-width: 100%;
 
+  background-color: #5dd7d2;
+  border: 1px solid gray;
+  border-radius: 5px;
+  box-shadow: gray 1px 1px 5px;
+
   margin: 0;
-  padding: 0px;
+  padding: 10px;
   list-style: none;
 `;
 
@@ -33,6 +39,5 @@ export const ButtonItem = styled.button`
 `;
 
 export const Text = styled.p`
-  padding: 15px;
   margin: 0;
 `;

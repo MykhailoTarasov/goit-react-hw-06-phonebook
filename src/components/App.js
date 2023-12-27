@@ -1,12 +1,12 @@
 import ContactForm from './ContactForm/ContactForm';
 import ContactList from './ContactList/ContactList';
 import Filter from './Filter/Filter';
-import { Container, Title } from './Layout';
+import { Container, MainTitle, Title } from './Layout';
 
 const App = () => {
   return (
     <Container>
-      <h1>Phonebook</h1>
+      <MainTitle>Phonebook</MainTitle>
       <ContactForm />
 
       <Title>Contacts</Title>

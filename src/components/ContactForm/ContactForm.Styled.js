@@ -13,6 +13,12 @@ export const StyledForm = styled(Form)`
 export const Container = styled.div`
   display: flex;
   justify-content: center;
+
+  padding: 15px;
+  background-color: #5dd7d2;
+  border: 1px solid gray;
+  border-radius: 5px;
+  box-shadow: gray 1px 1px 5px;
 `;
 
 export const ErrMessageStyled = styled(ErrorMessage)`
